@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    /* Language and environment */
+    "target": "ES2022",
+    "lib": ["ES2022"],
+
+    /* Module resolution */
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    
+    /* Enable esModuleInterop to make default imports for CommonJS modules (like `import express from 'express'`) */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* Strict type-checking (recommended) */
+    "strict": false
+  }
+}
