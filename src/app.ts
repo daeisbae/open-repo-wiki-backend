@@ -5,7 +5,7 @@ import cors from 'cors';
 
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:3001',
+    origin: '*',
     methods: ['GET', 'POST'], // Specify the methods you want to allow
     allowedHeaders: ['Content-Type'], // Specify the headers you want to allow
   }));
