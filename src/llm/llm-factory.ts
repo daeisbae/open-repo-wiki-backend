@@ -3,6 +3,7 @@ import DeepSeekProvider from './provider/deepseek'
 import GoogleProvider from './provider/google'
 import LLMConfig from './llm-config'
 import dotenv from 'dotenv'
+import HyperbolicProvider from './provider/hyperbolic'
 dotenv.config()
 
 /**
@@ -24,6 +25,8 @@ export default class LLMFactory {
                 return new GoogleProvider(apiKey!, modelName!, llmConfig)
             case 'deepseek':
                 return new DeepSeekProvider(apiKey!, modelName!, llmConfig)
+            case 'hyperbolic':
+                return new HyperbolicProvider(apiKey!, modelName!, llmConfig)
             default:
                 throw new Error(`Unsupported LLM provider: ${provider}`)
         }
